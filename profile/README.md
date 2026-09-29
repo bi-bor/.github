@@ -11,7 +11,11 @@ dashboard            hub: közös belépés, app-lista (apps.php)
  ├─ pultpilot        bolti kasszaeladások
  ├─ samurai          UNAS AI-asszisztens
  ├─ speedsky         Skylon gyors lekérdező, hitelkeretek, Pricer
+ ├─ beszerzo         beszerzés (Skylon-adat a BPHubnak is)
  └─ bphub            palack forecast, készlet, beszerzés, rendelés
+
+keret                a közös app-keret (core/), a modulokba PR-rel kerül
+unas-muveletek       parancssori tömeges UNAS-módosítások (nincs felülete)
 ```
 
 | | Repó | Élő oldal |
@@ -22,10 +26,15 @@ dashboard            hub: közös belépés, app-lista (apps.php)
 | Modul | [pultpilot](https://github.com/bi-bor/pultpilot) | https://pult.bi-bor.hu |
 | Modul | [samurai](https://github.com/bi-bor/samurai) | https://samurai.bi-bor.hu |
 | Modul | [speedsky](https://github.com/bi-bor/speedsky) | https://speedsky.bi-bor.hu |
+| Modul | [beszerzo](https://github.com/bi-bor/beszerzo) | https://procura.bi-bor.hu |
 | Modul | [bphub](https://github.com/bi-bor/bphub) | https://palack.bi-bor.hu |
+| Keret | [keret](https://github.com/bi-bor/keret) | — (nincs telepítése, a modulok `core/` mappája) |
+| Eszköz | [unas-muveletek](https://github.com/bi-bor/unas-muveletek) | — (a fejlesztői gépen fut) |
 
-Az app-listában szerepel még a Beszerző (procura.bi-bor.hu); ennek nincs
-repója ebben a szervezetben.
+A modulok a közös **keretre** épülnek (váz, belépés, téma, beállítások);
+a cashsky és a pultpilot átköltözése folyamatban van. A `main` ág minden
+modulnál GitHub Actions → FTP úton megy élesbe, a futó verzió a felületen
+vagy a `https://<modul>.bi-bor.hu/version.php` címen látszik.
 
 Új modul: külön repó `modul` topickal, bejegyzés a dashboard
 `login/apps.php`-jába, és egy sor ebbe a táblázatba.
