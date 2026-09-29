@@ -10,7 +10,8 @@ dashboard            hub: közös belépés, app-lista (apps.php)
  ├─ cashsky          pénzügyi áttekintés
  ├─ pultpilot        bolti kasszaeladások
  ├─ samurai          UNAS AI-asszisztens
- └─ speedsky         Skylon gyors lekérdező, hitelkeretek, Pricer
+ ├─ speedsky         Skylon gyors lekérdező, hitelkeretek, Pricer
+ └─ bphub            palack forecast, készlet, beszerzés, rendelés
 ```
 
 | | Repó | Élő oldal |
@@ -21,9 +22,10 @@ dashboard            hub: közös belépés, app-lista (apps.php)
 | Modul | [pultpilot](https://github.com/bi-bor/pultpilot) | https://pult.bi-bor.hu |
 | Modul | [samurai](https://github.com/bi-bor/samurai) | https://samurai.bi-bor.hu |
 | Modul | [speedsky](https://github.com/bi-bor/speedsky) | https://speedsky.bi-bor.hu |
+| Modul | [bphub](https://github.com/bi-bor/bphub) | https://palack.bi-bor.hu |
 
-Az app-listában szerepel még a BPHub (palack.bi-bor.hu) és a Beszerző
-(procura.bi-bor.hu); ezeknek nincs repójuk ebben a szervezetben.
+Az app-listában szerepel még a Beszerző (procura.bi-bor.hu); ennek nincs
+repója ebben a szervezetben.
 
 Új modul: külön repó `modul` topickal, bejegyzés a dashboard
 `login/apps.php`-jába, és egy sor ebbe a táblázatba.
